@@ -1,0 +1,19 @@
+# Android Studio
+.idea
+*.iml
+captures/
+
+# Gradle
+.gradle
+gradlew.bat
+build/
+local.properties
+reports
+jacoco.exec
+
+# Gradle Profiler
+profile-out*
+gradle-user-home
+
+# Steve Jobs
+.DS_Store

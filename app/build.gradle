@@ -1,0 +1,35 @@
+buildscript {
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.2.1'
+    classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.71'
+  }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+dependencies {
+  implementation 'androidx.appcompat:appcompat:1.0.2'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.71'
+}
+
+android {
+  compileSdkVersion 28
+
+  defaultConfig {
+    minSdkVersion 23
+    targetSdkVersion 28
+
+    versionCode 1
+    versionName '1.0.0'
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_7
+    targetCompatibility JavaVersion.VERSION_1_7
+  }
+
+  lintOptions {
+    abortOnError false
+  }
+}
